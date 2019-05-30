@@ -1,0 +1,7 @@
+{
+  "name": "iot-restaurant-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
