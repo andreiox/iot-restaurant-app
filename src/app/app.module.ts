@@ -8,6 +8,7 @@ import { SplashScreen } from '@ionic-native/splash-screen'
 import { StatusBar } from '@ionic-native/status-bar'
 
 import { BalancePage } from '../pages/balance/balance'
+import { HistoryPage } from '../pages/history/history'
 import { HomePage } from '../pages/home/home'
 import { MyApp } from './app.component'
 
@@ -15,7 +16,8 @@ import { MyApp } from './app.component'
   declarations: [
     MyApp,
     HomePage,
-    BalancePage
+    BalancePage,
+    HistoryPage
   ],
   imports: [
     BrowserModule,
@@ -27,12 +29,13 @@ import { MyApp } from './app.component'
   entryComponents: [
     MyApp,
     HomePage,
-    BalancePage
+    BalancePage,
+    HistoryPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }

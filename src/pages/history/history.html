@@ -1,0 +1,26 @@
+<ion-content padding>
+  <ion-grid>
+    <ion-row justify-content-center align-items-center style="height: 80%; flex-direction: column">
+      <h4 text-center margin-top>Histórico</h4>
+      <div margin-top>
+        <ion-list *ngFor="let transaction of transactions">
+            Valor R$ {{transaction.value}} no dia {{transaction.date | date: 'dd/MM/yyyy'}} às {{transaction.date | date: 'H:mm'}}
+            <hr />
+        </ion-list>
+      </div>
+
+      <div margin-top>
+        <div text-center margin-top margin-bottom>
+          <button ion-button color="secondary" (click)="back()">
+            Voltar
+          </button>
+        </div>
+      </div>
+    </ion-row>
+    <ion-row justify-content-center align-items-center style="height:18%">
+    </ion-row>
+    <ion-row justify-content-center align-items-center style="font-size:12px">
+      made by Andre Macedo & Jardel Augusto
+    </ion-row>
+  </ion-grid>
+</ion-content>

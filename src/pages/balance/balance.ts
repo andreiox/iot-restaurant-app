@@ -3,6 +3,8 @@ import { LoadingController, NavController, NavParams } from 'ionic-angular'
 import { Component } from '@angular/core'
 import { Http, Response } from '@angular/http'
 
+import { HistoryPage } from '../history/history'
+
 @Component({
   selector: 'page-balance',
   templateUrl: 'balance.html'
@@ -12,7 +14,7 @@ export class BalancePage {
   client
   constructor(
     public navCtrl: NavController,
-    private navParams: NavParams,
+    public navParams: NavParams,
     private http: Http,
     private loadingController: LoadingController, ) {
 
@@ -29,7 +31,7 @@ export class BalancePage {
 
     this.http.get(url).subscribe(async (result: Response) => {
       const body = result.json()
-      this.navCtrl.push(BalancePage, { client: body.results })
+      this.navCtrl.push(HistoryPage, { transactions: body.results })
 
       loadingElement.dismiss()
     })
