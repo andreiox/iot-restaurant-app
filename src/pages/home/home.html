@@ -1,13 +1,24 @@
-<h4 text-center margin-top>Insert your credentials</h4>
+<ion-content padding>
+  <ion-grid style="height: 100%">
+    <ion-row justify-content-center align-items-center style="height: 80%; flex-direction: column">
+      <h4 text-center margin-top>Restaurant with RFID</h4>
+      <ion-item>
+        <ion-label stacked>CPF</ion-label>
+        <ion-input [(ngModel)]="cpf"></ion-input>
+      </ion-item>
 
-<ion-item>
-  <ion-label stacked>RFID</ion-label>
-  <ion-input [(ngModel)]="rfid"></ion-input>
-</ion-item>
-
-
-<div text-center margin-top>
-  <button ion-button color="secondary" (click)="signIn()">
-    SIGN IN
-  </button>
-</div>
+      <div margin-top>
+        <div text-center margin-top>
+          <button ion-button color="secondary" (click)="signIn()">
+            Entrar
+          </button>
+        </div>
+      </div>
+    </ion-row>
+    <ion-row justify-content-center align-items-center style="height:18%">
+    </ion-row>
+    <ion-row justify-content-center align-items-center style="font-size:12px">
+      made by Andre Macedo & Jardel Augusto
+    </ion-row>
+  </ion-grid>
+</ion-content>
