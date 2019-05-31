@@ -1,13 +1,24 @@
-<h4 text-center margin-top>Insert your credentials</h4>
+<ion-content padding>
+  <ion-grid style="height: 100%">
+    <ion-row justify-content-center align-items-center style="height: 80%; flex-direction: column">
+      <h4 text-center margin-top>Bem vindo, {{client.name}}!</h4>
+      <h1>Seu saldo é: R$ {{client.balance}}</h1>
 
-<ion-item>
-  <ion-label stacked>RFID</ion-label>
-  <ion-input [(ngModel)]="rfid"></ion-input>
-</ion-item>
-
-
-<div text-center margin-top>
-  <button ion-button color="secondary" (click)="signIn()">
-    SIGN INNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
-  </button>
-</div>
+      <div margin-top>
+        <div text-center margin-top>
+          <button ion-button color="secondary" (click)="seeTransactionHistory()">
+            Ver historico de gastos
+          </button>
+          <button ion-button (click)="update()">
+            Atualizar
+          </button>
+        </div>
+      </div>
+    </ion-row>
+    <ion-row justify-content-center align-items-center style="height:18%">
+    </ion-row>
+    <ion-row justify-content-center align-items-center style="font-size:12px">
+      made by Andre Macedo & Jardel Augusto
+    </ion-row>
+  </ion-grid>
+</ion-content>
