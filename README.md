@@ -17,19 +17,19 @@ This repo it's the app which the client will interact to see the account balance
 
 When opening the app, the client is greet with the login page where he/she needs to input his/her CPF.
 
-<img src="https://i.imgur.com/X7nlRpP.png" height="500">
+<kbd><img src="https://i.imgur.com/X7nlRpP.png" height="500"><kbd>
 
 ### **balance page**
 
 After logged in, the client will see the balance page.
 
-<img src="https://i.imgur.com/5nKp11b.png" height="500">
+<kbd><img src="https://i.imgur.com/5nKp11b.png" height="500"></kbd>
 
 ### **transaction history page**
 
 On the balance page, the client can press the green button to see the transaction history. This is the page.
 
-<img src="https://i.imgur.com/d8BiRdB.png" height="500">
+<kbd><img src="https://i.imgur.com/d8BiRdB.png" height="500"></kbd>
 
 ## **development**
 
